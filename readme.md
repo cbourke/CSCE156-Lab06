@@ -1,9 +1,11 @@
 # Computer Science II
 ## Lab 6.0 - Classes & Constructors
+[School of Computing](https://computing.unl.edu)  
+[College of Engineering](https://engineering.unl.edu/)  
+[University of Nebraska-Lincoln](https://unl.edu)  
+[University of Nebraska-Omaha](https://unomaha.edu)  
 
 An introduction to using polymorphism in the Java programming language.
-
-This is a lab used in Computer Science II (CSCE 156, CSCE 156H) in the [Department of Computer Science & Engineering](https://cse.unl.edu) at the [University of Nebraska-Lincoln](https://unl.edu).
 
 ## Overview
 
@@ -143,9 +145,9 @@ use overloaded methods and generic types.
 
 ### 3.1 Method Overloading
 
-A *moment* is a statistical measure of the "shape" of a set of values.  It measures how much a distribution deviates. Formally,
-the *k*-th moment of a set of values *x_1, ..., x_n* is defined as
-follows.  
+A *moment* is a statistical measure of the "shape" of a set of values.  It 
+measures how much a distribution deviates. Formally, the *k*-th moment of 
+a set of values *x_1, ..., x_n* is defined as follows.  
 <p align="center">
 <img src="images/moment.png" 
      alt="moment equation: $$\frac{1}{n} \sum_{i=1}^n (x_i - \alpha)^k$$" 
@@ -204,9 +206,11 @@ most.
 1.  Open the `ModeDemo.java` file.
 
 2.  You will find several methods already completed for you. You need to
-    implement the `computeMultiplicities()` and `findModes()` methods. 
+    implement the `findModes()` method. 
     Refer to the comments on how to use the `Map` data structure. Note that 
     `Map` is an interface. `HashMap` is a common implementation of this interface.
+
+3. 
 
 ### 3.3 Creating Parameterized Classes
 
