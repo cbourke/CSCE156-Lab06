@@ -86,3 +86,6 @@ figures/_minted*
 
 #
 .DS_Store
+
+# solution source folder
+src/main/java/unl/cse/solution
