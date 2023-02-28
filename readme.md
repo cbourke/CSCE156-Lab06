@@ -210,8 +210,6 @@ most.
     Refer to the comments on how to use the `Map` data structure. Note that 
     `Map` is an interface. `HashMap` is a common implementation of this interface.
 
-3. 
-
 ### 3.3 Creating Parameterized Classes
 
 In this activity you will explore how to parameterize classes in Java
