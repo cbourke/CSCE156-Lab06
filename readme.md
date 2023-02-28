@@ -148,11 +148,8 @@ use overloaded methods and generic types.
 A *moment* is a statistical measure of the "shape" of a set of values.  It 
 measures how much a distribution deviates. Formally, the *k*-th moment of 
 a set of values *x_1, ..., x_n* is defined as follows.  
-<p align="center">
-<img src="images/moment.png" 
-     alt="moment equation: $$\frac{1}{n} \sum_{i=1}^n (x_i - \alpha)^k$$" 
-     width="25%"/>
-</p>  
+
+$$\frac{1}{n} \sum_{i=1}^n (x_i - \alpha)^k$$
 
 Where *α* is a real number and *k > 0* is an integer. This is the
 most general form of the formula with α and *k* provided as
