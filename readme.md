@@ -151,14 +151,14 @@ a set of values $x_1, ..., x_n$ is defined as follows.
 
 $$\frac{1}{n} \sum_{i=1}^n (x_i - \alpha)^k$$
 
-Where $\alpha$ is a real number and *k > 0* is an integer. This is the
-most general form of the formula with α and *k* provided as
+Where $\alpha$ (alpha) is a real number and $k > 0$ is an integer. This is the
+most general form of the formula with α and $k$ provided as
 parameters. Otherwise, the "default" values for each are 0 and 1
 respectively.
 
 You may recognize several special cases of the moment: for
-*α = 0, k = 1* this is the sample mean.  For *α* being the
-mean, and *k = 2*, this is the definition of variance.
+$\alpha = 0, k = 1$ this is the sample mean.  For $\alpha$ being the
+mean, and $k = 2$, this is the definition of variance.
 
 1.  Open the `MomentUtils.java` file.
 
@@ -166,11 +166,11 @@ mean, and *k = 2*, this is the definition of variance.
     of them should take a `List` of `Double` values, but they should differ as
     follows.
 
-    -   One that takes only *α* as a parameter
+    -   One that takes only $\alpha$ as a parameter
 
-    -   One that takes only *k* as a parameter
+    -   One that takes only $k$ as a parameter
 
-    -   One that takes both *α* and *k* (this signature has been provided)
+    -   One that takes both $\alpha$ and $k$ (this signature has been provided)
 
     -   One that takes neither
 
@@ -195,7 +195,7 @@ using the method `put()` and can be retrieved using the `get()` method.
 
 In this exercise, you will familiarize yourself with maps by using one
 to compute the multiplicity of a list of integers and subsequently to
-find the mode of the list. Recall that the multiplicity of a number *x*
+find the mode of the list. Recall that the multiplicity of a number $x$
 in a list of integers is the number of times it appears in the list. The
 mode of a list of numbers is the value (or values) that appears the
 most.
