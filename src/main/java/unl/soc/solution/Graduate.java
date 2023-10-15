@@ -1,4 +1,4 @@
-package unl.cse;
+package unl.soc.solution;
 
 /**
  * Models a graduate student

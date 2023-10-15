@@ -1,22 +1,29 @@
-package unl.cse;
+package unl.soc.solution;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class MomentUtils {
 	
-	/**
-	 * Computes the moment of the given set of values using the
-	 * specified <code>alpha</code> and <code>k</code> parameters.
-	 * @param values
-	 * @param alpha
-	 * @param k
-	 * @return
-	 */
 	public static double moment(List<Double> values, double alpha, int k) {
-		return 0.0;
+		double sum = 0;
+		for(Double x : values) {
+			sum += Math.pow(x - alpha, k);
+		}
+		return sum / values.size();
 	}
 	
+	public static double moment(List<Double> values) {
+		return moment(values, 0, 1);
+	}
+
+	public static double moment(List<Double> values, double alpha) {
+		return moment(values, alpha, 1);
+	}
+
+	public static double moment(List<Double> values, int k) {
+		return moment(values, 0, k);
+	}		
 	public static void main(String args[]) {
 		
 		List<Double> numbers = Arrays.asList(-6.190000e-1, -1.042570e+0, -2.633440e-1, 

@@ -1,4 +1,4 @@
-package unl.cse;
+package unl.soc.solution;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -10,13 +10,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-/**
- * Demonstration of using maps and polymorphism to compute the modes of a
- * collection of numbers. The
- * <a href="https://en.wikipedia.org/wiki/Mode_(statistics)">mode</a> is the
- * most common value in the collection. There may be multiple, non-unique modes.
- *
- */
 public class ModeDemo {
 
 	/**
@@ -49,38 +42,29 @@ public class ModeDemo {
 	 * This method takes a map (assumed to be a list of integers mapping to their
 	 * multiplicity) and returns a set of all modes.
 	 * 
-	 * For example, a list containing [5, 7, 3, 4, 6, 7, 9, 5] would be 
-	 * represented in the map as:
-	 * 
-	 * 5 => 2 (since 5 appears 2 times)
-	 * 7 => 2
-	 * 3 => 1
-	 * 4 => 1
-	 * 6 => 1
-	 * 9 => 1
-	 * 
-	 * And thus, 5 and 7 should be included in the returned set.
-	 * 
 	 * @param m
 	 * @return
 	 */
 	public static Set<Integer> findModes(Map<Integer, Integer> m) {
 		Set<Integer> result = new HashSet<Integer>();
+		int maxCount = 0, maxValue;
+		for (Integer key : m.keySet()) {
+			if (m.get(key) > maxCount) {
+				maxCount = m.get(key);
+				maxValue = key;
+			}
+		}
+		for (Integer key : m.keySet()) {
+			if (m.get(key) == maxCount) {
+				result.add(key);
+			}
+		}
 		// TODO: find the mode(s); that is, the (key) element(s) with the
-		// largest value, and return it.  The mode may not be unique, thus 
-		// this method should return a set of modes
-		// Hint:
-		//   1. iterate over the map values to find the largest multiplicity
-		//   2. iterate over the map key/values and for any key whose value is
-		//      equal to the largest multiplicity 
+		// largest value, and return it.
+		// The mode may not be unique, thus this method should return a set of modes
 		return result;
 	}
 
-	/**
-	 * Loads a list of integers from a data file.
-	 * 
-	 * @return
-	 */
 	public static List<Integer> loadFile() {
 
 		List<Integer> numbers = new ArrayList<Integer>();
@@ -94,14 +78,6 @@ public class ModeDemo {
 		return numbers;
 	}
 
-	/**
-	 * Prints the given map of numbers and their multiplicity (the number of times
-	 * they appear in a collection) as indicated by the given Map.
-	 * 
-	 * Demonstrates how to iterate over a map in a sorted manner.
-	 * 
-	 * @param m
-	 */
 	public static void printMap(Map<Integer, Integer> m) {
 		List<Integer> sortedKeys = new ArrayList<Integer>(m.keySet());
 		Collections.sort(sortedKeys);

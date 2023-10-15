@@ -1,4 +1,4 @@
-package unl.cse;
+package unl.soc;
 
 /**
  * Models a basic droid (android, robot)

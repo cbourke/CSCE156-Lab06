@@ -1,6 +1,12 @@
-package unl.cse;
+package unl.soc;
 
 import org.junit.Test;
+
+import unl.soc.Course;
+import unl.soc.Droid;
+import unl.soc.Graduate;
+import unl.soc.Section;
+import unl.soc.Undergraduate;
 
 public class CourseTests {
 
