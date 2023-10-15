@@ -325,7 +325,7 @@ of object and that type of object must be a subtype of `Student`.
 
 * Test your programs using the provided JUnit test suite(s).  Fix any
 errors and completely debug your programs.
-* Submit *all* of your source files through webhandin.
+* Submit *all* of your source files.
 * Run the grader and verify the output to complete your lab.
 
 ### Advanced Activity (Optional) 
