@@ -89,3 +89,4 @@ figures/_minted*
 
 # solution source folder
 src/main/java/unl/cse/solution
+solution/
