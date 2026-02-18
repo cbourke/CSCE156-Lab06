@@ -20,7 +20,7 @@ Prior to lab you should read/review the following resources.
     <http://docs.oracle.com/javase/tutorial/java/javaOO/methods.html>
 
 -   Read the Oracle tutorial on Java Generics  
-    <http://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html>
+    <https://docs.oracle.com/javase/tutorial/extra/generics/index.html>
 
 ### Lab Objectives & Topics
 
